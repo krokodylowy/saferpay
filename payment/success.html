@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+<title>Success Page</title>
+<script language="JavaScript" type="text/javascript">
+	function iframe_breakout(){
+		//if (top.location!=location){
+		//top.location.href =document.location.href;
+		//}
+		parent.postMessage("payment","success");
+	}
+</script>
+</head>
+<body onload="iframe_breakout()">
+</body>
+<html>
